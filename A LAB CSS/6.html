@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>6</title>
+    <style>
+        input:focus{
+            background-color: yellow;
+        }
+        input{
+            color: blue;
+        }
+        input:invalid{
+            border:2px solid red;
+        }
+        textarea:invalid{
+            border:2px solid red;
+        }
+        textarea,input:valid{
+            border:2px solid green;
+        }
+            option:checked {
+             height: 500px;
+             width: 100px;
+             line-height: 100px;
+             size: 50%;
+}
+        
+
+    </style>
+    </head>
+    <body>
+        <form method="post" action="#">
+            <fieldset style="width:50%">
+            Name:<input type="text" class="name16"><br>
+            password:<input type="password" class="pass16"><br>
+            Email:
+            <input type="email" name="email" class="email16"><br>
+            
+            Phone No:
+            <input type="number" name="number" class="phno16"><br>
+           
+            Date:
+            <input type="date" name="date" class="date16"><br> 
+           
+            Gender:
+            <input type="radio" name="gender" value="male" class="male16">male
+            
+            <input type="radio" name="gender" value="female" class="female16">female
+            <br>
+
+           Vehicles:<br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+            
+            Location:
+            <select name="location" class="select16">
+             <option value="">please select</option>
+             <option value="pokhara">pokhara</option>
+             <option value="ktm" >kathmandu</option>
+             <option value="brt">biratnagar</option>
+             <option value="lx">laxmimarga</option>
+            </select>
+             <br>
+            Comments:
+            .<textarea name="textarea" class="textarea16">Write down your comments </textarea><br>
+            select file:
+            <input type="button" name="ok" value="ok" >
+            <input type="reset" name="Reset"   value="clear">
+            </fieldset>   
+
+            
+
+      </form>
+
+
+    </body>
+    </html>

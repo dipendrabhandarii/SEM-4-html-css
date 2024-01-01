@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>qn 15</title>
+</head>
+<body>
+<h2> Image Gallery</h2>
+<img width="200" height="250" src="yello.png"> 
+</body>
+</html>

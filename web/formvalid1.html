@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>form</title>
+</head>
+</body>
+<form>
+Name:<input type="text" name="my name" id="name"><br>
+Roll:<input type="text" name="number" id="roll"><br>
+Email:<input type="email" name="email" id="email"><br>
+College:<select name="college" id="college">
+<option value="">Select</option>
+<option value="n">NCC</option>
+<option value="s">SDC</option>
+</select><br>
+Gender:<input type="radio" name="gender" id="male">male
+<input type="radio" name="gender" id="female">female
+<br>
+
+<input type="button" value="Ok" onclick="validate()">
+</form>
+</body>
+<script>
+function validate()
+{
+var pattern=/^[A-Za-z ]+$/;
+var pattroll=/^[0-9]+$/;
+
+var name=document.getElementById("name").value;
+var num=document.getElementById("roll").value;
+var email=document.getElementById("email").value;
+var college=document.getElementById("college").value;
+var male=document.getElementById("male").checked;
+var female=document.getElementById("female").checked;
+
+var atpos=email.indexOf("@");
+var dotpos=email.lastIndexOf(".");
+
+if(name==""||num==""||email==""||college=="")
+{
+alert("all fields are required");
+}
+else if(name.length<6)
+{
+alert("Name must contain atleast 6 letters");
+}
+else if(!name.match(pattern))
+{
+alert("Name must contain alphabets only");
+}
+else if(num>=100)
+{
+alert("Roll must contain only 2 digit number");
+}
+else if(!num.match(pattroll))
+{
+alert("Roll must contain numbers only");
+}
+else if(atpos<1 && dotpos<3)
+{
+alert("Invalid Email");
+}
+else if(dotpos-atpos==1)
+{
+alert("Invalid Email");
+}
+else if(male=="0"&&female=="0")
+{
+alert("Gender is requied");
+}
+else
+{
+alert("Form is Valid");
+}
+}
+</script>
+</html>

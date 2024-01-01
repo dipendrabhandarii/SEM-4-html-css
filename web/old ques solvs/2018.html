@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>css table layout</h3>
+    <div class="container"> <div class="main">
+        <div class="first"> Header goes here</div>
+        <div class="second">
+
+            <div class="second1">
+                <div class="second2">
+                    topics
+                        html
+                        Css
+                        javascript
+
+                </div>
+            </div>
+        </div>
+            <div class="third"> copyright @2074 www.mysite.com</div>
+        </div>
+</div>
+   
+
+        <style>
+            .container{
+                margin: 0 20px;
+            }
+            .main{
+                border: 1px solid;
+            }
+            .first{
+                border-bottom: 1px solid;
+                padding: 5%;
+                background-color: green;
+            }
+            .second{
+                border-bottom: 1px solid;
+                background-color: grey;
+
+            }
+            .second1{
+                border-right: 1px solid;
+                width:80%;
+                background-color: blue;
+            }
+            .second2{
+                border-right: 1px solid;
+                width:20%;
+                padding:10%;
+                background-color: pink;
+            }
+            .third{
+                padding:1%;
+                text-align: center;
+                background-color: red;
+            }
+
+        </style>
+
+
+
+
+    <h3>Login form</h3>
+    <form action="#" method="get">
+        <fieldset >
+
+            <legend><big>Login form</big></legend>
+            Username:
+            <input type="text" name="un" required minlength="7"><br>
+            Password:
+            <input type="password" name="password" required minlength="6">
+            <br>
+            <input type="submit" name="submit" value="submit">
+
+
+        </fieldset>
+    </form>
+    <h3>
+        Nested table
+    </h3>
+    <table border="1px" cellspacing="0">
+        <thead>
+            <tr>
+                <th>S.N</th>
+                <th>college</th>
+                <th>address</th>
+            </tr>
+            <thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SDC</td>
+                        <td>Putalisadak</td>
+                        </tr>
+
+                        <tr>
+
+
+                            <td>2</td>
+
+                            <td>
+                                <table border="1px" cellspacing="0px" cellpadding="0">
+                                    <thead>
+                                        <tr>
+                                            <th>S.N</th>
+                                            <th>Faculty</th>
+                                        </tr>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <Tr>
+                                            <td>1</td>
+                                            <td>BIM</td>
+                                        </Tr>
+                                        <Tr>
+                                            <td>2</td>
+                                            <td>BBA</td>
+                                        </Tr>
+                                    </tbody>
+                                    </table>
+                                    <td>Baneshwor</td>
+                            </td>
+                        </tr>
+                        
+
+
+                    
+                </tbody>
+            </thead>
+        </thead>
+
+
+
+
+
+    </table>
+   
+
+</body>
+</html>

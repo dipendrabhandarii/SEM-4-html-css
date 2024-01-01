@@ -1,0 +1,18 @@
+<form>
+<label>Name</label>
+<input type= "text" id ="name" name="name">
+<br><label>Date</label>
+<input type= "text" id ="date" name="date">
+<br>
+<input type="button" value="ok" onclick="validate()">
+</form>
+<script>
+fuction validate()
+{
+var name=document.getElementById("name").value;
+var date=document.getElementById("date").value;
+if (name=="")
+{
+alert("fill the name");
+}
+</script>

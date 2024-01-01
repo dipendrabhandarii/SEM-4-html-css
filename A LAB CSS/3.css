@@ -1,0 +1,46 @@
+
+.a16{
+width:100 px;
+margin: 30px;
+padding:2px;
+border: 4px solid #ddd;
+height: 100px;
+}
+.c16{
+    width:300 px;
+    margin: 30px;
+    padding:2px;
+    border: 2px solid blue;
+    height: 300px;
+    border-radius: 20%;
+}.b16{
+     width:250px;
+    margin: 30px;
+    padding:2px;
+    border: 2px solid green;
+    height: 200px;
+    border-radius: 60%;
+ }
+    
+.d16{
+width: 300px;
+margin: 10px;
+padding:2px;
+margin-top: 10px;
+margin-right: 95px;
+}
+.e16{
+    width: 300px;
+    
+    padding:2px;
+    margin-top: 10px;
+   
+    }
+    .f16{
+        width: 300px;
+        margin: 10px;
+        padding:2px;
+        margin-top: 10px;
+        margin-left: 95px;
+        opacity: 0.7;
+        }

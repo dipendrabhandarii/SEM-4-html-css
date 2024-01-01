@@ -1,0 +1,37 @@
+<form>
+<label>Principle</lable>
+<input type="text" id="p" name="principle"><br>
+<label>Time</lable>
+<input type="text" id="t" time"><br>
+<label>Rate</lable>
+<input type="text" id="r" name="rate"><br>
+<input type="button" value="solve" onclick="validate()">
+</form>
+<script>
+function validerror(p,t,r)
+{
+prin=p;
+time=t;
+rate=r;
+if(prin==""||time==""||rate=="")
+{
+return ("error");
+}
+else if (prin.match(pattern)&&time.match(pattern)&&rate.match(pattern))
+{
+return ("error");
+}
+
+function validate()
+{
+var prin=document.getElementById("p").value;
+var time=document.getElementById("t").value;
+var rate=document.getElementById("r").value;
+var pattern=/^[0-9]+$/;
+var status= validaterror(p,t,r);
+alert("status");
+}
+}
+
+</script>
+

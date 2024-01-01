@@ -1,0 +1,338 @@
+ <!doctype html>
+<html>
+    <head>
+        <title> web programming1 tutorials </title>
+    </head>
+    <body>
+        
+        <h2>Introducing HTML and XHTML</h2>
+        <h2 align="center"> Tags and Elements</h2>
+        <p>The two angled brackets and the character betweeen them are known as tags. </p>
+        
+        <p> Elements are the opening and the closing tags plus anything between those tags.</p> 
+        <br>
+        <b> Here note: XHTML tags should always be written in lowercase letters while html is not case sensative</b>
+        <br>
+        <p>You are going to spend most of the remaining part of this chapter ;earning the different elements you can use to describe the structure of text.</p>
+        
+            <ul type="square">
+                <li><b> The six level heading :</b>  h1.h2.h3.h4.h5.h6</li>
+                <li><b>Paragraphs</b>< p>, < pre>, line brakes < b r > and addresses< address></li>
+                <li><b>Presentational elements:</b> < b>, < i>, < u>, < s>, < tt>, < sup> < sub> < strike> < big> < small> and < hr>
+                   <li> <b>Pharase elements such as</b>  < em> < strong>< abbr>< acronym> < dfn> < blockquote> < q> < cite> < code> < kbd> < var>< samp>and < address>
+                    <li> <b>Lists such as unordered list using </b> < ul> and < li>, ordered lists using < ol>and < li> and defining lists using < di>, < dt>,< dd>
+                      </li>
+            </ul>
+        <div>we will discuss about list in next chapter to come</div>
+        <br>
+        <h2 align="center">Basic text formatting</h2>
+        <p> In this section, you will learn how to use what are known as <i>basic text formatting element</i></p><br>
+        <list>
+            <ul> 
+                <li> < h1>,  < h2>,  < h3>,  < h4>,  < h5>,  < h6>, </h1></li>
+                <li>< p >, < br > < prr ></li>
+            </ul>
+        </list>
+        <h3 ><i>White spaces and flow</i> </h3> 
+        <pre> < p> This paragraph shows how mulitple spaces    between   words are treated as single space. this is known as white     space collapsing < /p></pre>
+        <p> This paragraph shows how mulitple spaces    between   words are treated as single space. this is known as white     space collapsing </p>
+        <h3> <i>Creating Headings usnig < hn> Elements</i> </h3>
+            <p><h1>< h1>Heading 1< /h1>  </h1></p>
+            <p><h2>< h2>Heading 2< /h2>  </h2></p> 
+            <p><h3>< h1>Heading 3< /h3>  </h3></p> 
+            <p><h4>< h4>Heading 4< /h4>  </h4></p> 
+            <p><h5>< h1>Heading 5< /h5>  </h5></p> 
+            <p><h6>< h6>Heading 6< /h6>  </h6></p> <br>
+
+        <div>Most browsers display the contents of the < h1>< h2> < h3> elements larger
+        than the default size of the text in the documents. The content of the  
+         < h4 > elements would be the same size as the default text, and the content
+        of the < h5> and < h6> elements would be smaller unless you instruct them otherwise using CSS> <br></
+            div>
+        <h3><i>The align Attribute (Deprecated) </i></h3>
+        <p>The align attribute indicates whether the heading appears to the left, center, or right of the page (the default is the left). It can take the three
+         values discussed in the table that follows.</p>
+
+          <h1 align=”left”> Left-Aligned Heading </h1 >  < h1 align=”left” > Left-Aligned Heading < /h1 >
+<!---- < p > This heading uses the align attribute with a value of left. < /p > --><p> This heading uses the align attribute with a value of left. </p>
+ <h1 align="center"> Centered Heading </h1> < h1 align=”center” > Centered Heading < /h1 >  <br>
+ <p> This heading uses the align attribute with a value of center. </p><br>
+ <h1 align="right"> Right-Aligned Heading </h1> < h1 align=”right” > Right-Aligned Heading < /h1 > <br>
+ < p > This heading uses the align attribute with a value of right. < /p > <br>
+
+ <h3><i> Creating Paragraphs Using the < p >Element</i></h3>
+ The < p > element offers another way to structure your text. Each paragraph of text should go in between
+an opening < p > and closing < /p > tag, as in this example:<br>
+ |<div>< p > Here is a paragraph of text. < /p ><div>
+    <div> < p > Here is a second paragraph of text. < /p ></ p></div>
+    <div>< p > Here is a third paragraph of text. < /p ></div>
+<p> When a browser displays a paragraph, it usually inserts a new line before the next paragraph and adds a
+little bit of extra vertical space, as given below:</p>
+<p> Here is a paragraph of text. </p>
+<p> Here is a second paragraph of text. </p>
+<p> Here is a third paragraph of text. </p>
+<br>
+<h3> <i> Creating line breaks using the < br > Element</i></h3>
+<p>Whenever you use the < br  > element, anything following it starts on the next line. The < br  >
+    element is an example of an empty element ; you don ’ t need opening and closing tags, because there is
+    nothing to go in between them. </p><br>
+    You could use multiple < br  > elements to push text down several lines, and many designers use two
+line breaks between paragraphs of text rather than using the < p > element to structure text, as follows:
+<div>Paragraph one < br > < br  ></div>
+<div>Paragraph two < br  > < br  ></div>
+<div>Paragraph three < br  > < br > </div><br>
+Paragraph one <br> <br>
+Paragraph two <br> <br>
+Paragraph three <br> <br>
+<h3><i> Creating performatted text using the < pre >Elements</i></h3><br>
+<p>Any text between the opening < pre > tag and the closing < /pre > tag will preserve the formatting of the
+    source document.</p>
+    <p> The most common uses of the < pre > element are to represent Java code. For example, the
+        following shows some Java inside a < pre > element 
+     <p>
+        <div> < pre >
+            <div> class java_demo</div>
+            <div> {</div>
+                   <div> public Static void main(String[] args)</div>
+                    <div>{</div>
+                    <div>int a;</div>
+                    <div> a=10;</div>
+                    <div>systen.out.println("The value of a is "+a);</div>
+                <div>}</div>
+             <div>}</div>
+                
+             < /pre> </div>
+        </p>
+        <p>you can below how the content of the < pre > element is display in the monospaced font. more important, you can see how it folows the formatting shows inside the< pre ><br>
+        element-the white space is preserved.</p>
+        <pre> 
+            class java_demo
+            {
+               public Static void main(String[] args)
+              {
+                int a;
+                a=10;
+                systen.out.println("The value of a is "+a);
+              }
+            }
+         </pre><br>
+         <h2 align="center">Presentational Elements</h2><br>
+         <p>These elements affect only the presentation of a document and the markup is of no
+            other use. You can also achieve a similar appearance using CSS. However, they are still commonly used. 
+            </p>
+         <h3><i>The < b > Element</i></h3>
+          <div> Anything that apppears in a< b > element is displayed in bold, like the word bold here</div>
+        <div> <p>The following word is uses a <b>bold</b> typeface.</div><br>
+            <h3><i>The < i > Element</i></h3>
+            <div>The content of an < i> elementis displayed in italicized  text, like the word "italic "here.</i> </div>
+            <div>The following word uses an <i>italic </i> typeface.</div>
+            <br>
+            <h3><i>The < u > Element (Deprecated)</i></h3>
+               <div> The content of a < u > element is underlined with a simple line:</div>
+              <div>The following word would be <u> underlined </u><br> 
+            <h3><i>The < s > and < strike > Elements (Deprecated)</i></h3> 
+            <div> The content of an < s > or < strike > element is displayed with a strikethrough, which is a thin line
+                through the text ( < s > is just the abbreviated form of < strike > ).</div>
+               <div> The following word would have a <s> strikethrough. </s> </div><br>
+               <h3><i>The < tt >Element </i></h3>
+               <div>The content of a < tt > element is written in monospaced font (like that of a teletype machine)</div>
+               <div>The following word will appear in a <tt> monospaced </tt>font.
+               </div>   <br>
+               <p><big>Now let's take a look at the < sup > , < sub > , < big > , < small > , and < hr / > elements</big></p><br>
+               <h3><i>The < sup >Element </i></h3>
+               <div>The content of a < sup > element is written in superscript; it is displayed half a character ’ s height above
+                the other characters and is also often slightly smaller than the text surrounding it. </div>
+                <div>Written on the 31 <sup> st </sup>February</div><br>
+                <h3><i>The < sub > Element<. </i></h3>
+                <div>The content of a < sub > element is written in subscript; it is displayed half a character ’ s height beneath</sub>
+                    the other characters and is also often slightly smaller than the text surrounding it.</div>
+               <div>
+                The EPR paradox <sub > 2 </sub > was devised by Einstein, Podolsky, and Rosen.
+                 </div><br>
+                <h3><i>The < big >Element </i></h3>
+                 <div>In early versions of HTML there were 7 standard sizes of text, and the < big > element was introduced to
+                 make the contents of this element one font size larger than the rest of the text surrounding it (up to the
+                 largest size — size 7). These days you should avoid using this element because it only has an effect on
+                 the look of the document; it does not help describe the document ’ s structure or meaning. Instead you
+                should use CSS to change the size of text.</div>
+                <div> The following word should be <big> bigger </big>than those around it</div><br>
+                <h3><i>The < small >Element 
+                </i></h3>
+                <div>The < small > element is the opposite of the < big > element, and its contents are displayed one font size
+                    smaller than the rest of the text surrounding it. If the font is already the smallest, it has no effect. You can
+                    nest several < small > elements inside one another, and the content of each gets one size smaller for
+                    each element.</small></div>
+                    <div> following word should be <small > smaller </small >than those around it.
+                    </div><br>
+                    <h3><i>The < hr  > Element </i></h3>
+                    <div>The < hr / > element creates a horizontal rule across the page. It is an empty element, rather like the
+                    < br / > element. </div>
+                    <di><hr>
+                    This is frequently used to separate distinct sections of a page where a new heading is not appropriate. </div><br>
+                    <h2 align="center"> Phrase Element</h2>
+                    <p> Some of the elements in this section are displayed in a manner similar to the Presentational Elements
+                        < b > , < i > , < pre > , and < tt > that you have just read about, but the following elements are not just for
+                       presentational purposes; they also describe something about their content. For example, the words
+                       written in an < em > element will look just like the words in an < i > element, but the < em > element is
+                       supposed to indicate the addition of emphasis.
+                        This section covers the following elements:
+                    
+                            <ul type="square">
+                                <li>  < em > and < strong > for emphasis</li>
+                                <li>
+                                    < blockquote > , < cite > , and < q > for quotations and citations</li>
+                                   <li> < abbr > , < acronym > , and < dfn > for abbreviations, acronyms, and key terms</li>
+                                  <li>< code > , < kbd > , < var > , and < samp > for computer code and information</li> 
+                                  <li >< address > for addresses</li>
+                            </ul>
+                    
+                       </p> <br>
+                       <h3><i>The < em >Element Adds Emphasis </i></h3>
+                       <div> The content of an < em > element is intended to be a point of emphasis in your document, and it is usually
+                        displayed in italicized text. The kind of emphasis intended is on words such as “ must ” in the following
+                        sentence: </div>
+                        <div><p > You <em > must </em > remember to close elements in XHTML. </p > </div><br>
+                        <h3><i>The < strong >Element Adds Strong Emphasis </i></h3>
+                        <div> The < strong > element is intended to show strong emphasis for its content — stronger emphasis than
+                            the < em > element. As with the < em > element, the < strong > element should be used only when you want
+                            to add strong emphasis to part of a document. Most visual browsers display the strong emphasis in a
+                            bold font. </div>
+                            <p > < em > Always </ em > look at burning magnesium through protective colored glass as it < strong > can cause blindness < /strong > . </p >
+                        <div><p > <em > Always </em > look at burning magnesium through protective colored glass as it <strong > can cause blindness </strong > . </p > </div>
+        <br>
+        <h3><i>The < address > Element Is for Addresses </i></h3>
+        <div>Many documents need to contain a snail - mail address, and there is a special < address > element that is
+            used to contain addresses. For example, here is the address for Wrox, inside an < address > element</div>
+            < div>< address > Wrox Press, 10475 Crosspoint Blvd, Indianapolis, IN 46256 < /address > < /div> 
+        <div><address > Wrox Press, 10475 Crosspoint Blvd, Indianapolis, IN 46256 </address > </div><br>
+        <h3><i>The < abbr > Element Is for Abbreviations</i></h3>
+            <div>You can indicate when you are using an abbreviated form by placing the abbreviation between opening
+                < abbr > and closing < /abbr > tags.
+                When possible, consider using a title attribute whose value is the full version of the abbreviations. For
+               example, if you want to indicate that Bev is an abbreviation for Beverly, you can use the < abbr > element
+               like so:</div>
+            <div>I have a friend called < abbr title=”Beverly” > Bev < /abbr > .
+            </div>
+            <div>I have a friend called <abbr title=”Beverly” > Bev </abbr > .
+            </div>
+            <br>
+            <h3><i>The < acronym > Element Is for Acronym Use </i></h3>
+            <div>The < acronym > element allows you to indicate that the text between opening < acronym > and closing
+                < /acronym > tags is an acronym.
+                 When possible, use a title attribute on opening < acronym > tags whose value is the full version of the
+                acronym. For example, if you want to indicate that XHTML was an acronym, you can use the < acronym >
+                element.</div>
+            <div>< p>This chapter covers marking up text in < acronym title=”Extensible Hypertext
+                Markup Language” > XHTML < /acronym > < /p> </div>
+            <div>This chapter covers marking up text in <acronym title=”Extensible Hypertext
+                Markup Language” > XHTML </acronym>  </div><br>
+
+                <h3><i>The < dfn > Element Is for Special Terms </i></h3>
+                <p>The < dfn > element allows you to specify that you are introducing a special term. Its use is similar to the
+                    italicized notes in this book used to introduce important new concepts. </p><br>
+
+                   <div>< p>This book teaches you how mark up your documents for the Web using
+                        < dfn > XHTML < /dfn > < /p><?div>
+
+                        <p>This book teaches you how mark up your documents for the Web using
+                            <dfn > XHTML </dfn > </p><br>
+                <h3><i>The < blockquote > Element Is for Quoting Text </i></h3>
+                <div>When you want to quote a passage from another source, you should use the < blockquote > element</div>
+                <div>< p>  The following description of XHTML is taken from the W3C Web site:
+                    < blockquote > XHTML 1.0 is the W3C’s first Recommendation for XHTML,
+                   following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML
+                   2.0. < /blockquote > 
+                   < /p></div>
+                <p> The following description of XHTML is taken from the W3C Web site: </p>
+                    <blockquote> XHTML 1.0 is the W3C’s first Recommendation for XHTML,
+                   following on from earlier work on HTML 4.01, HTML 4.0, HTML 3.2 and HTML
+                   2.0. </blockquote> <br>
+                <h3><i>Using the cite Attribute with the < blockquote >Element </i></h3>
+                <div>You can use the cite attribute on the < blockquote > element to indicate the source of the quote</div>
+                <p>< blockquote cite=”http://www.w3.org/markup/” > XHTML 1.0 is the W3C’s first
+                    Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML
+                    4.0, HTML 3.2 and HTML 2.0. < /blockquote > 
+                    </p>
+                    <div><blockquote cite=”http://www.w3.org/markup/” > XHTML 1.0 is the W3C’s first
+                Recommendation for XHTML, following on from earlier work on HTML 4.01, HTML
+                4.0, HTML 3.2 and HTML 2.0. </blockquote ></div><br>
+
+                <h3><i>The < q > Element Is for Short Quotations</i></h3>
+                <div>The < q > element is intended to be used when you want to add a quote within a sentence, rather than as
+                    an indented block on its own</div>
+                    <div>< p > As Dylan Thomas said, < q > Somebody’s boring me. I think it’s me < /q > . < /p > </div>
+                    <p> As Dylan Thomas said, <q> Somebody’s boring me. I think it’s me </q > . </p> 
+                <h3><i> The < cite > Element Is for Citations </i></h3>
+                <div>If you are quoting a text, you can indicate the source by placing it between an opening < cite > tag and
+                    closing < /cite > tag. As you would expect in a print publication, the content of the < cite > element is
+                    rendered in italicized text by default</div>
+                    <div>< p> This chapter is taken from < cite > Beginning Web Development < /cite > </p></div>
+                    <p> This chapter is taken from <cite > Beginning Web Development </cite > </p><br>
+                <h3><i>The < code > Element Is for Code</i></h3>
+                <div>If your pages include any programming code (which is not uncommon on the Web), the following four
+                    elements will be of particular use to you. Any code to appear on a web page should be placed inside a
+                     < code > element. Usually the content of the < code > element is presented in a monospaced font, just like
+                    the code in most programming books</div>
+                    <div>< p > < code > & lt;h1 & gt;This is a primary heading & lt;/h1 & gt; < /code > < /p ></div>
+                    <p > <code > & lt;h1 & gt;This is a primary heading & lt;/h1 & gt; </code>
+         
+            <h3> <i> The < kbd > Element Is for Text Typed on a Keyboard  </i></h3>
+         <p>If, when talking about computers, you want to tell a reader to enter some text, you can use the < kbd >
+            element to indicate what should be typed in, as in this example </p>
+            <div>< p > To force quit an application in Windows, hold down the < kbd > ctrl < /kbd > ,
+                < kbd > alt < /kbd >and < kbd > delete < /kbd >keys together. < /p > </div>
+                <p > To force quit an application in Windows, hold down the <kbd > ctrl </kbd > ,
+ <kbd > alt </kbd >and <kbd > delete </kbd >keys together. </p > 
+
+    <h3><i>The < var > Element Is for Programming Variables</i></h3>
+    <p>The < var > element is another of the elements added to help programmers. It is usually used in
+        conjunction with the < pre > and < code > elements to indicate that the content of that element is a
+        variable that can be supplied by a user</p>
+    <div>< p > < code > document.write(“ < var > user-name < /var > ”) < /code > < /p > </div>
+    <div><p > <code > document.write(“ <var > user-name </var > ”) </code > </p > </div>
+
+    <h3><i>The < samp > Element Is for a Program Output</i></h3>
+    <p>he < samp > Element Is for a Program Output
+        The < samp > element indicates sample output from a program, script, or the like. Again, it is mainly used
+       when documenting programming concepts</p>
+    <div>< p > The following line uses the & lt;samp & gt; element to indicate the output
+        from a script or program. < /p >
+         < p > < samp > This is the output from our test script. < /samp > < /p > 
+        </div>
+        <p > The following line uses the & lt;samp & gt; element to indicate the output
+from a script or program. <p >
+ <p > <samp > This is the output from our test script. </samp > </p > <br>
+
+    <big><u>The End</u></big>
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+        
+       
+      
+
+
+
+
+
+
+
+
+
+       
+    </body>
+
+</html>
